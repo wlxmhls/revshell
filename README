@@ -1,0 +1,25 @@
+I am going to write a victim-controller tool as following:
+
+1. victim
+    victim is implemented in C, which can receive commands from controller, and execute the commands, return the result to controller.
+    Moreover, victim can setup connection between each other, with the help of controller (like P2P).
+
+2. controller
+    controller is implemented in Python. It launches commands to victim and receive command result, help setup connection between victims.
+
+3. ...
+
+
+Thanks to the Internet.
+
+FAQ:
+对于server端来说，如果是运行在nat设备之后，也就是通过防火墙或路由器等网络设备或软件(如iptables)对server服务端口做了映射或转发，需要保证这些设备或软件没有做nat回环，即不要做SNAT，否则server端显示的client端来源IP不正确（会显示为这些设备或软件的网口IP地址）。
+
+Windows平台的victim
+通过cntl实现p2p方式的登录、文件发送
+批量及定点发送文件目录、命令
+WEB界面实现控制查看
+
+idea: Linux版录屏, 录像, XMPP IM
+
+手机控制关闭电脑
